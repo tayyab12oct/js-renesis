@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2</title>
+    <script src="./index.js"></script>
+</head>
+
+<body>
+
+    <h1>1. Is JS client side or server side language?</h1>
+    <h2>Ans: Yes</h2>
+    <br>
+    <br>
+    <br>
+    <h1>2. Does JS produces Source/Object code?</h1>
+    <h2>Ans: No. Because the JavaScript code is executed directly by the browser.</h2>
+    <br>
+    <br>
+    <br>
+    <h1>3. List down all data types provided by JS.</h1>
+    <h2>Ans: There are 6 data types mostly used in javascript.
+        <ul>
+            <li>String</li>
+            <li>Boolean</li>
+            <li>Number</li>
+            <li>Object</li>
+            <li>Undefined</li>
+            <li>Null</li>
+        </ul>
+    </h2>
+    <br>
+    <br>
+    <br>
+    <h1>4. In how many ways a variable can be declared?</h1>
+    <h2>Ans: There are three ways a variable can be declared.
+        <ul>
+            <li>var</li>
+            <li>let</li>
+            <li>const</li>
+        </ul>
+    </h2>
+    <br>
+    <br>
+    <br>
+    <h1>5. What does a variable scope mean</h1>
+    <h2>Ans: There are two types of scopes in programming:
+        <ul>
+            <li>Global scope</li>
+            <li>Local scope</li>
+        </ul>
+        Example:
+
+        <ul>
+            <li>Global scope: <br />
+                var name = 'Tayyab';<br />
+                console.log("My name is", name); Output: My name is Tayyab
+            </li>
+            <br />
+            <li>Local scope:
+                <br />
+                function handler() {<br />
+                var name = 'M.Tayyab';<br />
+                console.log("My name is", name);<br />
+                }<br />
+                handler()<br />
+                Output: My name is M.Tayyab
+            </li>
+        </ul>
+        <br>
+    </h2>
+
+
+    <script>
+        var name = 'Tayyab'; //Globaly scope
+        console.log("My name is", name); //Output: My name is Tayyab
+
+        function handler() {
+            var name = 'M.Tayyab'; //Localy scope
+            console.log("My name is", name); //Output: My name is M.Tayyab
+        }
+        handler()
+
+    </script>
+</body>
+
+</html>
